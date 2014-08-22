@@ -1,0 +1,22 @@
+<html>
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1">
+      <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
+      <script src="main.js" type="text/javascript"></script>
+    </head>
+    <title>git2svn</title>
+    <body>
+        <h1>Select your patch:</h1>
+        <form enctype="multipart/form-data">
+          <input type="file" name="myfile" id="file-input">
+          <br><br>
+          <input type="button" id="convert-btn" value="Convert!" onclick="convert()">
+          <img id="loading-icon" src="loading.gif" style="display:none" />
+        </form>
+        <div id="convert-result" style="display:none"> Your patch has been converted successfully, please download it: <br>
+            <a id="patch-download-link" target="_blank"></a>
+        </div>
+        <div id="error-result" style="display:none"> Oops, something wrong with the converter, please try again later. <br>
+        </div>
+    </body>
+</html>
